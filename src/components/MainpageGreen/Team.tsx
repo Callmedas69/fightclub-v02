@@ -2,11 +2,12 @@
 
 import React from "react";
 import Image from "next/image";
-import leader1 from "@/assets/citizen/01.svg";
-import leader2 from "@/assets/citizen/02.svg";
-import leader3 from "@/assets/citizen/03.svg";
-import leader4 from "@/assets/citizen/04.svg";
-import leader5 from "@/assets/citizen/05.svg";
+import OxD from "@/assets/team/OxD_Hover.png";
+import Barret from "@/assets/team/Barrett_Hover.png";
+import Blackswan from "@/assets/team/BlackSwan_Hover.png";
+import DMan from "@/assets/team/DMan_Hover.png";
+import MrGreen from "@/assets/team/MrGreen_Hover.png";
+
 import { Card, CardContent, CardFooter, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
 
@@ -14,27 +15,27 @@ const teamList = [
   {
     name: "Blackswan",
     position: "Co-Founder / COO",
-    photo: leader1,
+    photo: Blackswan,
   },
   {
-    name: "Mr-Green",
+    name: "MrGreen",
     position: "Co-Founder / COO",
-    photo: leader2,
+    photo: MrGreen,
   },
   {
     name: "0xD",
     position: "Tech Lead",
-    photo: leader3,
+    photo: OxD,
   },
   {
     name: "Barret",
     position: "A.I Alchemist",
-    photo: leader4,
+    photo: Barret,
   },
   {
     name: "D Man",
     position: "Special Advisor",
-    photo: leader5,
+    photo: DMan,
   },
 ];
 
@@ -60,9 +61,13 @@ const Team = () => {
               whileHover={{ scale: [null, 1.2, 1.1] }}
               transition={{ duration: 0.3 }}
             >
-              <Card key={index} className="hover:shadow-xl hover:shadow-white">
-                <CardContent className="pt-5 pb-0 bg-[#120026]">
-                  <Image src={team.photo} alt={team.name} />
+              <Card key={index} className="hover:shadow-2xl hover:shadow-white">
+                <CardContent className="pb-0 bg-[#120026] px-0">
+                  <Image
+                    src={team.photo}
+                    alt={team.name}
+                    className="filter grayscale hover:grayscale-0 duration-300"
+                  />
                 </CardContent>
                 <CardFooter className="flex flex-col bg-[#d9d9d9] text-[#050505]">
                   <CardTitle>
