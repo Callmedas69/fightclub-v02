@@ -19,7 +19,7 @@ const communityList = [
 
 const Footer = () => {
   return (
-    <div className="relative bg-indigo-500">
+    <div className="relative bg-[#324c9b]">
       <div className="flex flex-row px-20 py-8 text-2xl justify-between">
         <div className="flex flex-row gap-5">
           {communityList.map((community, index) => (

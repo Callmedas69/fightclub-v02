@@ -40,7 +40,7 @@ const Hero02 = () => {
               <Image src={launch} alt="launch" />
             </div>
             <div className="flex justify-center items-center">
-              <Button className="bg-yellow-500 rounded-none text-2xl text-black font-semibold px-10 py-7 hover:shadow-blue-900">
+              <Button className="bg-yellow-500 rounded-none text-2xl text-black font-semibold px-10 py-7 hover:bg-red-600 hover:text-white hover:shadow-2xl hover:shadow-orange-300">
                 VIEW COLLECTION
               </Button>
             </div>
