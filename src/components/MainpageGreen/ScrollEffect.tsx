@@ -79,13 +79,10 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
 
 export default function VelocityText() {
   return (
-    <section className="w-screen bg-transparent -rotate-12">
-      <ParallaxText baseVelocity={-5}>
+    <section className="w-screen v-[25vh] text-[#fe2929] bg-[#b70027]">
+      <ParallaxText baseVelocity={2}>
         FIGHT TO PROTECT OUR CHILDREN | FIGHT AGAINST OPPRESSION | FIGHT TO MAKE
-        CRYPTO GREATE AGAIN |
-      </ParallaxText>
-      <ParallaxText baseVelocity={10}>
-        TRUMPS FIGHT FIST | BUILD ON BASE
+        CRYPTO GREATE AGAIN
       </ParallaxText>
     </section>
   );

@@ -3,20 +3,21 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import ttsLogo from "@/assets/ttsLogo.jpg"; // Replace with your actual icon import
+import ttsLogo from "@/assets/homepage/TTS_Logo.png";
 
 const navLinks = [
-  { title: "TTS TOKEN", path: "/" },
+  { title: "TTS TOKEN", path: "#" },
   { title: "FIGHT NFT", path: "/mint" },
-  { title: "WHITEPAPER", path: "/swap" },
-  { title: "TEAM", path: "/showroom" },
+  { title: "SWAP", path: "/swap" },
+  { title: "WHITEPAPER", path: "#whitepaper" },
+  { title: "TEAM", path: "#team" },
   { title: "FAQ", path: "/faq" },
   { title: "DEXTOOLS", path: "/faq" },
 ];
 
 const NavbarGreen = () => {
   return (
-    <nav className="flex items-center justify-between h-20 px-36 pt-10">
+    <nav className="flex items-center justify-between h-20 px-44 pt-10">
       {/* Left Section */}
 
       {/* lOGO */}
@@ -24,8 +25,8 @@ const NavbarGreen = () => {
         <Image
           src={ttsLogo}
           alt="TTS Logo"
-          width={75}
-          height={75}
+          width={85}
+          height={85}
           className="rounded-full"
         />
       </div>

@@ -1,5 +1,11 @@
+import Community from "@/components/MainpageGreen/Community";
+import Footer from "@/components/MainpageGreen/Footer";
 import Hero02 from "@/components/MainpageGreen/Hero02";
+import Naratives from "@/components/MainpageGreen/Naratives";
 import NavbarGreen from "@/components/MainpageGreen/NavbarGreen";
+import VelocityText from "@/components/MainpageGreen/ScrollEffect";
+import Team from "@/components/MainpageGreen/Team";
+import Whitepaper from "@/components/MainpageGreen/Whitepaper";
 import React from "react";
 
 const testpage = () => {
@@ -8,14 +14,13 @@ const testpage = () => {
       <div className="fixed top-0 inset-x-0 z-50">
         <NavbarGreen />
       </div>
-
-      {/* <div className="absolute inset-0 flex items-center justify-center z-40">
-        <VelocityText />
-      </div> */}
-
-      <div className="h-screen z-30">
-        <Hero02 />
-      </div>
+      <Hero02 />
+      <VelocityText />
+      <Community />
+      <Naratives />
+      <Whitepaper />
+      <Team />
+      <Footer />
     </div>
   );
 };

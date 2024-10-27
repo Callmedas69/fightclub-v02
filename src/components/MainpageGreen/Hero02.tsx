@@ -2,6 +2,8 @@ import React from "react";
 import { Button } from "../ui/button";
 import localFont from "next/font/local";
 import Image from "next/image";
+import launch from "@/assets/homepage/HeroFIGHTLaunch.png";
+import background from "@/assets/homepage/TopBG.png";
 import bacteria01 from "../../assets/mainpage/bacteria-green-01.svg";
 import bacteria02 from "../../assets/mainpage/bacteria-green-02.svg";
 import bacteria03 from "../../assets/mainpage/bacteria-orange.svg";
@@ -22,25 +24,24 @@ export const BackWild = localFont({
 
 const Hero02 = () => {
   return (
-    <div className="relative overflow-visible h-screen bg-[#810027]">
-      <div className="grid grid-cols-2 justify-center items-center h-screen w-full border border-white">
+    <div className="relative overflow-visible w-screen h-screen my-0 py-0">
+      <Image
+        src={background}
+        alt="background"
+        objectFit="fill"
+        objectPosition="center"
+        className="absolute inset-0 w-full h-screen -z-10"
+      />
+      <div className="grid grid-cols-2 justify-center items-center h-screen w-full">
         {/* THE FIGHT */}
         <div className="relative flex justify-end items-end">
-          <div className="flex flex-col w-[80%] justify-end">
-            <div className="border border-white text-center text-white pt-10 pb-5">
-              <p>TTS PRESENT</p>
-              <p className="font-bold text-2xl">THE</p>
-              <p
-                className={`text-[90px] font-bold -top-1 ${BackWild.className}`}
-              >
-                FIGHT !
-              </p>
-              <p className="font-bold text-lg">NFT COLLECTION</p>
-              <p className="text-sm">LAUNCH EARLY NOVEMBER 2024</p>
+          <div className="flex flex-col w-[80%] justify-center items-center">
+            <div className="pt-10 justify-center items-center">
+              <Image src={launch} alt="launch" />
             </div>
-            <div className="flex justify-center items-center border border-white ">
-              <Button className="bg-yellow-500 rounded-3xl text-black font-semibold">
-                MORE INFO
+            <div className="flex justify-center items-center">
+              <Button className="bg-yellow-500 rounded-none text-2xl text-black font-semibold px-10 py-7 hover:shadow-blue-900">
+                VIEW COLLECTION
               </Button>
             </div>
           </div>
